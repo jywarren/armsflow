@@ -1,0 +1,19 @@
+<%= error_messages_for 'transfer' %>
+
+<!--[form:transfer]-->
+<p><label for="transfer_agent_name">Agent name</label><br/>
+<%= text_field 'transfer', 'agent_name'  %></p>
+
+<p><label for="transfer_recipient_name">Recipient name</label><br/>
+<%= text_field 'transfer', 'recipient_name'  %></p>
+
+<p><label for="transfer_value">Value</label><br/>
+<%= text_field 'transfer', 'value'  %></p>
+
+<p><label for="transfer_datetime">Datetime</label><br/>
+<%= datetime_select 'transfer', 'datetime'  %></p>
+
+<p><label for="transfer_unit">Unit</label><br/>
+<%= text_field 'transfer', 'unit'  %></p>
+<!--[eoform:transfer]-->
+

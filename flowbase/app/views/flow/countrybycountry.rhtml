@@ -1,0 +1,97 @@
+<script type="text/javascript" charset="utf-8">
+	function showall() {
+		var agents=new Array(<% for agent in @agents %><%= agent.id %>,<% end -%>0);
+		function outputarray(element, index, agents) {
+			if (element != 0) {
+				$('country_'+element).show();
+			}
+		}
+		agents.forEach(outputarray);
+		$('showall').hide();
+		$('hideall').show();
+	}
+	function hideall() {
+		var agents=new Array(<% for agent in @agents %><%= agent.id %>,<% end -%>0);
+		function outputarray(element, index, agents) {
+			if (element != 0) {
+				$('country_'+element).hide();
+			}		}
+		agents.forEach(outputarray);
+		$('hideall').hide();
+		$('showall').show();
+	}
+</script>
+
+<div id="timeline_container">
+
+<!--[if !IE]> -->
+	<object classid="java:timeline.class" 
+			type="application/x-java-applet"
+			archive="/timeline.jar"
+			width="1000" height="160"
+			standby="Loading Processing software..." >
+			
+		<param name="archive" value="/timeline.jar" />
+		<param name="flowbase" value="/flowbase/countrysum/<%= @country %>" />
+		<param name="year" value="<%= @year %>" />
+		<param name="country" value="<%= @country %>" />
+		<param name="urlbase" value="http://localhost:3000" />
+			
+		<param name="mayscript" value="true" />
+		<param name="scriptable" value="true" />
+	
+		<param name="image" value="loading.gif" />
+		<param name="boxmessage" value="Loading Processing software..." />
+		<param name="boxbgcolor" value="#eeeeee" />
+	
+		<param name="test_string" value="outer" />
+<!--<![endif]-->
+	
+	<object classid="clsid:8AD9C840-044E-11D1-B3E9-00805F499D93" 
+			codebase="http://java.sun.com/update/1.4.2/jinstall-1_4_2_12-windows-i586.cab"
+			width="1000" height="160"
+			standby="Loading Processing software..."  >
+			
+		<param name="code" value="code" />
+		<param name="archive" value="/timeline.jar" />
+		<param name="flowbase" value="/flowbase/countrysum/<%= @country %>" />
+		<param name="year" value="<%= @year %>" />
+		<param name="country" value="<%= @country %>" />
+		<param name="urlbase" value="http://localhost:3000" />
+				
+		<param name="mayscript" value="true" />
+		<param name="scriptable" value="true" />
+		
+		<param name="image" value="loading.gif" />
+		<param name="boxmessage" value="Loading Processing software..." />
+		<param name="boxbgcolor" value="#eeeeee" />
+		
+		<param name="test_string" value="inner" />
+		
+		<p>
+			<strong>
+				This browser does not have a Java Plug-in.
+				<br />
+				<a href="http://java.sun.com/products/plugin/downloads/index.html" title="Download Java Plug-in">
+					Get the latest Java Plug-in here.
+				</a>
+			</strong>
+		</p>
+	
+	</object>
+	
+<!--[if !IE]> -->
+	</object>
+<!--<![endif]-->
+
+</div>
+
+<div id="report">
+	<h2><%= @country %> Arms Exports by country, 1950-2006</h2>
+	<p class="tools"><a id="showall" href="javascript:void(0);" onClick="showall();">show all</a><a id="hideall" style="display:none;" href="javascript:void(0);" onClick="hideall();">hide all</a> | <a href="/flow/country/<%= @country %>">by year</a></p>
+	<% for country in @countries -%><% unless country.blank? %>
+	<% agent = @agents.shift %>
+		<h3><a href="javascript:void(0);" onClick="$('country_<%= agent.id %>').toggle();"><%= agent.name %></a></h3>
+		<p style="display:none;" id="country_<%= agent.id %>"><% for transfer in country -%><b><%= transfer.datetime %>:</b> <%= transfer.value %><br /><% end -%></p>
+	<% end -%><% end -%>
+</div>

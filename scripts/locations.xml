@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dataset title="US Arms Exports" unit="year">
+	<style></style>
+	<timeseries>
+		<period value="1950">
+			<location name="Afghanistan" value="1641" color="" />
+			<location name="Albania" value="1641" color="" />
+			<location name="Algeria" value="1641" color="" />
+			<location name="Angola" value="1641" color="" />
+			<location name="Argentina" value="1641" color="" />
+			<location name="Armenia" value="1641" color="" />
+			<location name="Australia" value="1641" color="" />
+			<location name="Austria" value="1641" color="" />
+			<location name="Azerbaijan" value="1641" color="" />
+			<location name="Bahamas" value="1641" color="" />
+			<location name="Bahrain" value="1641" color="" />
+			<location name="Bangladesh" value="1641" color="" />
+			<location name="Barbados" value="1641" color="" />
+			<location name="Belarus" value="1641" color="" />
+			<location name="Belgium" value="1641" color="" />
+			<location name="Belize" value="1641" color="" />
+			<location name="Benin" value="1641" color="" />
+			<location name="Bhutan" value="1641" color="" />
+			<location name="Bolivia" value="1641" color="" />
+			<location name="Bosnia-Herzegovina" value="1641" color="" />
+			<location name="Botswana" value="1641" color="" />
+			<location name="Brazil" value="1641" color="" />
+			<location name="Brunei" value="1641" color="" />
+			<location name="Bulgaria" value="1641" color="" />
+			<location name="Burkina Faso" value="1641" color="" />
+			<location name="Burundi" value="1641" color="" />
+			<location name="Cambodia" value="1641" color="" />
+			<location name="Cameroon" value="1641" color="" />
+			<location name="Canada" value="1641" color="" />
+			<location name="Cape Verde" value="1641" color="" />
+			<location name="Chad" value="1641" color="" />
+			<location name="Chile" value="1641" color="" />
+			<location name="China" value="1641" color="" />
+			<location name="Colombia" value="1641" color="" />
+			<location name="Comoros" value="1641" color="" />
+			<location name="Congo" value="1641" color="" />
+			<location name="Costa Rica" value="1641" color="" />
+			<location name="Cote d'Ivoire" value="1641" color="" />
+			<location name="Croatia" value="1641" color="" />
+			<location name="Cuba" value="1641" color="" />
+			<location name="Cyprus" value="1641" color="" />
+			<location name="Czech Republic" value="1641" color="" />
+			<location name="Denmark" value="1641" color="" />
+			<location name="Djibouti" value="1641" color="" />
+			<location name="Dominican Republic" value="1641" color="" />
+			<location name="Ecuador" value="1641" color="" />
+			<location name="Egypt" value="1641" color="" />
+			<location name="El Salvador" value="1641" color="" />
+			<location name="Equatorial Guinea" value="1641" color="" />
+			<location name="Eritrea" value="1641" color="" />
+			<location name="Estonia" value="1641" color="" />
+			<location name="Ethiopia" value="1641" color="" />
+			<location name="Fiji" value="1641" color="" />
+			<location name="Finland" value="1641" color="" />
+			<location name="France" value="1641" color="" />
+			<location name="Gabon" value="1641" color="" />
+			<location name="Gambia" value="1641" color="" />
+			<location name="Georgia" value="1641" color="" />
+			<location name="Germany" value="1641" color="" />
+			<location name="Ghana" value="1641" color="" />
+			<location name="Greece" value="1641" color="" />
+			<location name="Grenada" value="1641" color="" />
+			<location name="Guatemala" value="1641" color="" />
+			<location name="Guinea" value="1641" color="" />
+			<location name="Guinea Bissau" value="1641" color="" />
+			<location name="Guyana" value="1641" color="" />
+			<location name="Haiti" value="1641" color="" />
+			<location name="Honduras" value="1641" color="" />
+			<location name="Hungary" value="1641" color="" />
+			<location name="Iceland" value="1641" color="" />
+			<location name="India" value="1641" color="" />
+			<location name="Indonesia" value="1641" color="" />
+			<location name="Iran" value="1641" color="" />
+			<location name="Iraq" value="1641" color="" />
+			<location name="Ireland" value="1641" color="" />
+			<location name="Israel" value="1641" color="" />
+			<location name="Israel/PLO" value="1641" color="" />
+			<location name="Italy" value="1641" color="" />
+			<location name="Jamaica" value="1641" color="" />
+			<location name="Japan" value="1641" color="" />
+			<location name="Jordan" value="1641" color="" />
+			<location name="Kazakhstan" value="1641" color="" />
+			<location name="Kenya" value="1641" color="" />
+			<location name="Kiribati" value="1641" color="" />
+			<location name="Kuwait" value="1641" color="" />
+			<location name="Kyrgyzstan" value="1641" color="" />
+			<location name="Laos" value="1641" color="" />
+			<location name="Latvia" value="1641" color="" />
+			<location name="Lebanon" value="1641" color="" />
+			<location name="Lesotho" value="1641" color="" />
+			<location name="Liberia" value="1641" color="" />
+			<location name="Libya" value="1641" color="" />
+			<location name="Lithuania" value="1641" color="" />
+			<location name="Luxembourg" value="1641" color="" />
+			<location name="Macedonia" value="1641" color="" />
+			<location name="Madagascar" value="1641" color="" />
+			<location name="Malawi" value="1641" color="" />
+			<location name="Malaysia" value="1641" color="" />
+			<location name="Maldives" value="1641" color="" />
+			<location name="Mali" value="1641" color="" />
+			<location name="Malta" value="1641" color="" />
+			<location name="Marshall Islands" value="1641" color="" />
+			<location name="Mauritania" value="1641" color="" />
+			<location name="Mauritius" value="1641" color="" />
+			<location name="Mexico" value="1641" color="" />
+			<location name="Micronesia" value="1641" color="" />
+			<location name="Moldova" value="1641" color="" />
+			<location name="Mongolia" value="1641" color="" />
+			<location name="Morocco" value="1641" color="" />
+			<location name="Mozambique" value="1641" color="" />
+			<location name="Myanmar" value="1641" color="" />
+			<location name="Namibia" value="1641" color="" />
+			<location name="NATO" value="1641" color="" />
+			<location name="Nepal" value="1641" color="" />
+			<location name="Netherlands" value="1641" color="" />
+			<location name="New Zealand" value="1641" color="" />
+			<location name="Nicaragua" value="1641" color="" />
+			<location name="Niger" value="1641" color="" />
+			<location name="Nigeria" value="1641" color="" />
+			<location name="Northern Cyprus" value="1641" color="" />
+			<location name="North Korea" value="1641" color="" />
+			<location name="North Vietnam" value="1641" color="" />
+			<location name="North Yemen" value="1641" color="" />
+			<location name="Norway" value="1641" color="" />
+			<location name="Oman" value="1641" color="" />
+			<location name="Pakistan" value="1641" color="" />
+			<location name="Palau" value="1641" color="" />
+			<location name="Panama" value="1641" color="" />
+			<location name="Papua New Guinea" value="1641" color="" />
+			<location name="Paraguay" value="1641" color="" />
+			<location name="Peru" value="1641" color="" />
+			<location name="Philippines" value="1641" color="" />
+			<location name="Poland" value="1641" color="" />
+			<location name="Portugal" value="1641" color="" />
+			<location name="Qatar" value="1641" color="" />
+			<location name="Romania" value="1641" color="" />
+			<location name="Russia" value="1641" color="" />
+			<location name="Rwanda" value="1641" color="" />
+			<location name="Samoa" value="1641" color="" />
+			<location name="Saudi Arabia" value="1641" color="" />
+			<location name="Senegal" value="1641" color="" />
+			<location name="Serbia & Mont." value="1641" color="" />
+			<location name="Seychelles" value="1641" color="" />
+			<location name="Sierra Leone" value="1641" color="" />
+			<location name="Singapore" value="1641" color="" />
+			<location name="Slovakia" value="1641" color="" />
+			<location name="Slovenia" value="1641" color="" />
+			<location name="Solomon Islands" value="1641" color="" />
+			<location name="Somalia" value="1641" color="" />
+			<location name="South Africa" value="1641" color="" />
+			<location name="South Korea" value="1641" color="" />
+			<location name="South Vietnam" value="1641" color="" />
+			<location name="South Yemen" value="1641" color="" />
+			<location name="Spain" value="1641" color="" />
+			<location name="Sri Lanka" value="1641" color="" />
+			<location name="St Kitts and Nevis" value="1641" color="" />
+			<location name="St Vincent" value="1641" color="" />
+			<location name="Sudan" value="1641" color="" />
+			<location name="Suriname" value="1641" color="" />
+			<location name="Swaziland" value="1641" color="" />
+			<location name="Sweden" value="1641" color="" />
+			<location name="Switzerland" value="1641" color="" />
+			<location name="Syria" value="1641" color="" />
+			<location name="Taiwan" value="1641" color="" />
+			<location name="Tajikistan" value="1641" color="" />
+			<location name="Tanzania" value="1641" color="" />
+			<location name="Thailand" value="1641" color="" />
+			<location name="Togo" value="1641" color="" />
+			<location name="Tonga" value="1641" color="" />
+			<location name="Trinidad & Tobago" value="1641" color="" />
+			<location name="Tunisia" value="1641" color="" />
+			<location name="Turkey" value="1641" color="" />
+			<location name="Turkmenistan" value="1641" color="" />
+			<location name="Tuvalu" value="1641" color="" />
+			<location name="UAE" value="1641" color="" />
+			<location name="Uganda" value="1641" color="" />
+			<location name="UK" value="1641" color="" />
+			<location name="Uruguay" value="1641" color="" />
+			<location name="USA" value="1641" color="" />
+			<location name="USSR" value="1641" color="" />
+			<location name="Uzbekistan" value="1641" color="" />
+			<location name="Vanuatu" value="1641" color="" />
+			<location name="Venezuela" value="1641" color="" />
+			<location name="Viet Nam" value="1641" color="" />
+			<location name="Yemen" value="1641" color="" />
+			<location name="Zambia" value="1641" color="" />
+			<location name="Zimbabwe" value="1641" color="" />
+		</period>
+	</timeseries>
+</dataset>

@@ -1,0 +1,577 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Countries.pm - Perl module providing country name, country code, and continent information</title>
+<link rev="made" href="mailto:bmwt@narus2.caida.org" />
+</head>
+
+<body style="background-color: white">
+
+<p><a name="__index__"></a></p>
+<!-- INDEX BEGIN -->
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#synopsis">SYNOPSIS</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#errors">ERRORS</a></li>
+	<li><a href="#examples">EXAMPLES</a></li>
+	<li><a href="#environment">ENVIRONMENT</a></li>
+	<li><a href="#see_also">SEE ALSO</a></li>
+	<li><a href="#notes">NOTES</a></li>
+	<li><a href="#warnings">WARNINGS</a></li>
+	<li><a href="#diagnostics">DIAGNOSTICS</a></li>
+	<li><a href="#bugs">BUGS</a></li>
+	<li><a href="#restrictions">RESTRICTIONS</a></li>
+	<li><a href="#author">AUTHOR</a></li>
+</ul>
+<!-- INDEX END -->
+
+<hr />
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>Countries.pm - Perl module providing country name, country code, and continent information</p>
+<p>
+</p>
+<hr />
+<h1><a name="synopsis">SYNOPSIS</a></h1>
+<pre>
+    use CAIDA::Countries;</pre>
+<pre>
+    my $countries = new CAIDA::Countries();</pre>
+<pre>
+    print &quot;Canada's 2-letter ISO code is: &quot; .
+        $country-&gt;get_iso2code_by_name('Canada') . &quot;\n&quot;;
+    print &quot;Zimbabwe is on the continent of &quot; .
+        $country-&gt;get_contname_by_contcode(
+        $country-&gt;get_continent_by_iso2code(
+        $country-&gt;get_iso2code_by_name('Zimbabwe'))) . &quot;.\n&quot;;</pre>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>Countries is a module that lets you look up information on countries,
+continents, and country locations.  It is meant to provide general,
+relatively static information.  It does not map latitude and longitude
+to a specific country, but it does map the name of a country to the
+latitude and longitude of its geographic center.</p>
+<dl>
+<dt><strong><a name="item_module_setup">Module Setup</a></strong><br />
+</dt>
+<dl>
+<dt><strong><a name="item_new">new(COUNTRY-NAME--ISO2--FILE, ISO2--LOCATION--FILE, ISO2--ISO3--FILE, ISO2--FIPS--FILE, CONTINENT-CODE--CONTINENT-NAME--FILE)</a></strong><br />
+</dt>
+<dd>
+<pre>
+    sets up a new Countries module object.  takes five optional arguments
+    describing the location of the input data files you wish to use to
+    perform the country/country code/continent/location mappings.  in all
+    files, a # indicates a comment line to be ignored.  if specified, each
+    data source file will be used in lieu of the defaults listed below:</pre>
+</dd>
+<dl>
+<dt><strong><a name="item_country%2dname%2d%2diso2%2d%2dfile">COUNTRY-NAME--ISO2--FILE</a></strong><br />
+</dt>
+<dd>
+<pre>
+    file of the format:
+    &quot;ISO-2-letter-code&lt;tab&gt;country-full-name\n&quot;</pre>
+</dd>
+<dd>
+<pre>
+    a name in parentheses indicates an alternate name for that country.  a
+    name in square brackets indicates an optional addition (usually a prefix)
+    to the existing name.</pre>
+</dd>
+<dd>
+<pre>
+    default: &lt;your-coral-directory&gt;/etc/iso3166_2letter.txt</pre>
+</dd>
+<dt><strong><a name="item_iso2%2d%2dlocation%2d%2dfile">ISO2--LOCATION--FILE</a></strong><br />
+</dt>
+<dd>
+<pre>
+    file of the format:
+    &quot;ISO-2-letter-code&lt;tab&gt;continent-code&lt;tab&gt;latitude,longitude\n&quot;</pre>
+</dd>
+<dd>
+<pre>
+    default: &lt;your-coral-directory/etc/iso3166_loc.txt</pre>
+</dd>
+<dt><strong><a name="item_iso2%2d%2diso3%2d%2dfile">ISO2--ISO3--FILE</a></strong><br />
+</dt>
+<dd>
+<pre>
+    file of the format:
+    &quot;ISO-2-letter-code&lt;tab&gt;ISO-3-letter-code\n&quot;</pre>
+</dd>
+<dd>
+<pre>
+    default: &lt;your-coral-directory/etc/iso3166_3letter.txt</pre>
+</dd>
+<dt><strong><a name="item_iso2%2d%2dfips%2d%2dfile">ISO2--FIPS--FILE</a></strong><br />
+</dt>
+<dd>
+<pre>
+    file of the format:
+    &quot;ISO-2-letter-code&lt;tab&gt;fips-code\n&quot;</pre>
+</dd>
+<dd>
+<pre>
+    default: &lt;your-coral-directory/etc/iso3166_fips.txt</pre>
+</dd>
+<dt><strong><a name="item_continent%2dcode%2d%2dcontinent%2dname%2d%2dfile">CONTINENT-CODE--CONTINENT-NAME--FILE</a></strong><br />
+</dt>
+<dd>
+<pre>
+    file of the format:
+    &quot;continent-code&lt;tab&gt;continent-name\n&quot;</pre>
+</dd>
+<dd>
+<pre>
+    default: &lt;your-coral-directory/etc/continents.txt</pre>
+</dd>
+</dl>
+These files are further documented in conjunction with other CoralReef
+data files at: <a href="../../../etc/doc/txt_data_files.html">txt_data_files.html</a><br /><br /></dl>
+<dt><strong><a name="item_country_name_information">Country Name Information</a></strong><br />
+</dt>
+<dd>
+Countries.pm lets you look up country names by country code (ISO2,
+ISO3, or FIPS), look up country code (ISO2, ISO3, FIPS) by country
+name, and convert between verious types of country codes.
+</dd>
+<dl>
+<dt><strong><a name="item_get_name_by_iso2code"><code>get_name_by_iso2code(ISO2CODE)</code></a></strong><br />
+</dt>
+<dd>
+<pre>
+    returns the full name of the country specified by the given ISO 2-letter
+    country code.</pre>
+</dd>
+<dt><strong><a name="item_get_name_by_iso3code"><code>get_name_by_iso3code(ISO3CODE)</code></a></strong><br />
+</dt>
+<dd>
+<pre>
+    returns the full name of the country specified by the given ISO 3-letter
+    country code.</pre>
+</dd>
+<dt><strong><a name="item_get_name_by_fipscode"><code>get_name_by_fipscode(FIPSCODE)</code></a></strong><br />
+</dt>
+<dd>
+<pre>
+    returns the full name of the country specified by the given FIPS
+    country code.</pre>
+</dd>
+<dt><strong><a name="item_get_iso2code_by_name"><code>get_iso2code_by_name(COUNTRY-NAME)</code></a></strong><br />
+</dt>
+<dd>
+<pre>
+    returns the ISO 2-letter country code that corresponds to the provided
+    name of a country.</pre>
+</dd>
+<dt><strong><a name="item_get_iso2code_by_iso3code"><code>get_iso2code_by_iso3code(ISO3CODE)</code></a></strong><br />
+</dt>
+<dd>
+<pre>
+    returns the ISO 2-letter country code that corresponds to the given ISO
+    3-letter country code.</pre>
+</dd>
+<dt><strong><a name="item_get_iso2code_by_fipscode"><code>get_iso2code_by_fipscode(FIPSCODE)</code></a></strong><br />
+</dt>
+<dd>
+<pre>
+    returns the ISO 2-letter country code that corresponds to the given 
+    FIPS country code.</pre>
+</dd>
+<dt><strong><a name="item_get_iso3code_by_name"><code>get_iso3code_by_name(COUNTRY-NAME)</code></a></strong><br />
+</dt>
+<dd>
+<pre>
+    returns the ISO 3-letter country code that corresponds to the provided
+    name of a country.</pre>
+</dd>
+<dt><strong><a name="item_get_iso3code_by_iso2code"><code>get_iso3code_by_iso2code(ISO2CODE)</code></a></strong><br />
+</dt>
+<dd>
+<pre>
+    returns the ISO 3-letter country code that corresponds to the given ISO
+    2-letter country code.</pre>
+</dd>
+<dt><strong><a name="item_get_iso3code_by_fipscode"><code>get_iso3code_by_fipscode(FIPSCODE)</code></a></strong><br />
+</dt>
+<dd>
+<pre>
+    returns the ISO 3-letter country code that corresponds to the given
+    FIPS country code.</pre>
+</dd>
+<dt><strong><a name="item_get_fipscode_by_name"><code>get_fipscode_by_name(COUNTRY-NAME)</code></a></strong><br />
+</dt>
+<dd>
+<pre>
+    returns the FIPS country code that corresponds to the provided
+    name of a country.</pre>
+</dd>
+<dt><strong><a name="item_get_fipscode_by_iso2code"><code>get_fipscode_by_iso2code(ISO2CODE)</code></a></strong><br />
+</dt>
+<dd>
+<pre>
+    returns the FIPS country code that corresponds to the given ISO 2-letter
+    country code.</pre>
+</dd>
+<dt><strong><a name="item_get_fipscode_by_iso3code"><code>get_fipscode_by_iso3code(ISO3CODE)</code></a></strong><br />
+</dt>
+<dd>
+<pre>
+    returns the FIPS country code that corresponds to the given ISO
+    3-letter country code.</pre>
+</dd>
+</dl>
+<dt><strong><a name="item_continent_information">Continent Information</a></strong><br />
+</dt>
+<dl>
+<dt><strong><a name="item_get_contname_by_contcode"><code>get_contname_by_contcode(CONTINENT-CODE)</code></a></strong><br />
+</dt>
+<dd>
+<pre>
+    returns the continent code that corresponds to the provided
+    continent name.</pre>
+</dd>
+<dt><strong><a name="item_get_contcode_by_contname"><code>get_contcode_by_contname(CONTINENT-NAME)</code></a></strong><br />
+</dt>
+<dd>
+<pre>
+    returns the continent name that corresponds to the provided
+    continent code.</pre>
+</dd>
+<dt><strong><a name="item_get_continent_by_name"><code>get_continent_by_name(COUNTRY-NAME)</code></a></strong><br />
+</dt>
+<dd>
+<pre>
+    returns the continent code that corresponds to the provided
+    country name.</pre>
+</dd>
+<dt><strong><a name="item_get_continent_by_iso2code"><code>get_continent_by_iso2code(ISO2CODE)</code></a></strong><br />
+</dt>
+<dd>
+<pre>
+    returns the continent code that corresponds to the provided
+    iso 2-letter country code.</pre>
+</dd>
+<dt><strong><a name="item_get_continent_by_iso3code"><code>get_continent_by_iso3code(ISO3CODE)</code></a></strong><br />
+</dt>
+<dd>
+<pre>
+    returns the continent code that corresponds to the provided
+    iso 3-letter country code.</pre>
+</dd>
+<dt><strong><a name="item_get_continent_by_fipscode"><code>get_continent_by_fipscode(FIPSCODE)</code></a></strong><br />
+</dt>
+<dd>
+<pre>
+    returns the continent code that corresponds to the provided
+    fips country code.</pre>
+</dd>
+<dt><strong><a name="item_get_names_by_contcode"><code>get_names_by_contcode(CONTINENT-CODE)</code></a></strong><br />
+</dt>
+<dd>
+<pre>
+    returns a reference to an array that is a list of the names of all of
+    the countries inside the continent that corresponds to the provided
+    continent code.</pre>
+</dd>
+<dt><strong><a name="item_get_iso2codes_by_contcode"><code>get_iso2codes_by_contcode(CONTINENT-CODE)</code></a></strong><br />
+</dt>
+<dd>
+<pre>
+    returns a reference to an array that is a list of the ISO 2-letter
+    country codes of all of the countries inside the continent that
+    corresponds to the provided continent code.</pre>
+</dd>
+<dt><strong><a name="item_get_iso3codes_by_contcode"><code>get_iso3codes_by_contcode(CONTINENT-CODE)</code></a></strong><br />
+</dt>
+<dd>
+<pre>
+    returns a reference to an array that is a list of the ISO 3-letter
+    country codes of all of the countries inside the continent that
+    corresponds to the provided continent code.</pre>
+</dd>
+<dt><strong><a name="item_get_fipscodes_by_contcode"><code>get_fipscodes_by_contcode(CONTINENT-CODE)</code></a></strong><br />
+</dt>
+<dd>
+<pre>
+    returns a reference to an array that is a list of the FIPS
+    country codes of all of the countries inside the continent that
+    corresponds to the provided continent code.</pre>
+</dd>
+</dl>
+<dt><strong><a name="item_location_information">Location Information</a></strong><br />
+</dt>
+<dl>
+<dt><strong><a name="item_get_location_by_name"><code>get_location_by_name(COUNTRY-NAME)</code></a></strong><br />
+</dt>
+<dd>
+<pre>
+    returns a string of the form &quot;continent&lt;tab&gt;latitude,longitude&quot; that
+    corresponds to the geographic center of the country specified by the
+    given country name.</pre>
+</dd>
+<dt><strong><a name="item_get_location_by_iso2code"><code>get_location_by_iso2code(ISO2CODE)</code></a></strong><br />
+</dt>
+<dd>
+<pre>
+    returns a string of the form &quot;continent&lt;tab&gt;latitude,longitude&quot; that
+    corresponds to the geographic center of the country specified by the
+    given iso 2-letter country code.</pre>
+</dd>
+<dt><strong><a name="item_get_location_by_iso3code"><code>get_location_by_iso3code(ISO3CODE)</code></a></strong><br />
+</dt>
+<dd>
+<pre>
+    returns a string of the form &quot;continent&lt;tab&gt;latitude,longitude&quot; that
+    corresponds to the geographic center of the country specified by the
+    given iso 3-letter country code.</pre>
+</dd>
+<dt><strong><a name="item_get_location_by_fipscode"><code>get_location_by_fipscode(FIPSCODE)</code></a></strong><br />
+</dt>
+<dd>
+<pre>
+    returns a string of the form &quot;continent&lt;tab&gt;latitude,longitude&quot; that
+    corresponds to the geographic center of the country specified by the
+    given fips country code.</pre>
+</dd>
+<dt><strong><a name="item_get_latlon_by_name"><code>get_latlon_by_name(COUNTRY-NAME)</code></a></strong><br />
+</dt>
+<dd>
+<pre>
+    returns a string of the form &quot;latitude,longitude&quot; that corresponds
+    to the geographic center of the country specified by the given
+    country name.</pre>
+</dd>
+<dt><strong><a name="item_get_latlon_by_iso2code"><code>get_latlon_by_iso2code(ISO2CODE)</code></a></strong><br />
+</dt>
+<dd>
+<pre>
+    returns a string of the form &quot;latitude,longitude&quot; that corresponds
+    to the geographic center of the country specified by the given
+    iso 2-letter country code.</pre>
+</dd>
+<dt><strong><a name="item_get_latlon_by_iso3code"><code>get_latlon_by_iso3code(ISO3CODE)</code></a></strong><br />
+</dt>
+<dd>
+<pre>
+    returns a string of the form &quot;latitude,longitude&quot; that corresponds
+    to the geographic center of the country specified by the given
+    iso 3-letter country code.</pre>
+</dd>
+<dt><strong><a name="item_get_latlon_by_fipscode"><code>get_latlon_by_fipscode(FIPSCODE)</code></a></strong><br />
+</dt>
+<dd>
+<pre>
+    returns a string of the form &quot;latitude,longitude&quot; that corresponds
+    to the geographic center of the country specified by the given
+    fipscountry code.</pre>
+</dd>
+<dt><strong><a name="item_get_split_loc">get_split_loc(ISO2CODE, TARGET-FLAG)</a></strong><br />
+</dt>
+<dd>
+<pre>
+    
+    if target-flag is 0:
+    returns the continent code that corresponds to the provided
+    iso 2-letter country code.</pre>
+</dd>
+<dd>
+<pre>
+    if target-flag is 1:
+    returns a string of the form &quot;latitude,longitude&quot; that corresponds
+    to the geographic center of the country specified by the given
+    iso 2-letter country code.
+    
+    this function is used extensively within the module to support all of the
+    previously documented functions; it is available for external use as well.</pre>
+</dd>
+</dl>
+<dt><strong><a name="item_data_output">Data Output</a></strong><br />
+</dt>
+<dd>
+<pre>
+    each of these functions takes a reference to a file as an optional
+    argument.  if no file reference is given, the data is sent to STDOUT.</pre>
+</dd>
+<dl>
+<dt><strong><a name="item_dump_continents_to_countries"><code>dump_continents_to_countries(FILEREF)</code></a></strong><br />
+</dt>
+<dd>
+<pre>
+    prints the continent code/iso 2-letter country code mappings as an
+    alphabetized list to the specified file as lines of the form: 
+    &quot;continent-code&lt;tab&gt;iso-2-letter-code&lt;tab&gt;iso-2-letter-code...\n&quot;</pre>
+</dd>
+<dt><strong><a name="item_dump_locations">dump_locations (FILEREF)</a></strong><br />
+</dt>
+<dd>
+<pre>
+    prints the ISO 2-letter code/location mappings to the specified file
+    as lines of the form: 
+    &quot;iso-2-letter-code&lt;tab&gt;continent-code&lt;tab&gt;latitude,longitude\n&quot;</pre>
+</dd>
+<dt><strong><a name="item_dump_countries">dump_countries (FILEREF)</a></strong><br />
+</dt>
+<dd>
+<pre>
+    prints the country name/ISO 2-letter code mappings to the specified
+    file as lines of the form: 
+    &quot;country-name&lt;tab&gt;iso-2-letter-code\n&quot;</pre>
+</dd>
+<dt><strong><a name="item_dump_iso2codes_to_countries">dump_iso2codes_to_countries (FILEREF)</a></strong><br />
+</dt>
+<dd>
+<pre>
+    prints the ISO 2-letter code/country name mappings to the specified
+    file as lines of the form: 
+    &quot;iso-2-letter-code&lt;tab&gt;country-name\n&quot;</pre>
+</dd>
+<dt><strong><a name="item_dump_iso2codes_to_iso3codes">dump_iso2codes_to_iso3codes (FILEREF)</a></strong><br />
+</dt>
+<dd>
+<pre>
+    prints the ISO 2-letter code/ISO 3-letter code mappings to the
+    specified file as lines of the form: 
+    &quot;iso-2-letter-code&lt;tab&gt;iso-3-letter-code\n&quot;</pre>
+</dd>
+<dt><strong><a name="item_dump_iso3codes_to_iso2codes">dump_iso3codes_to_iso2codes (FILEREF)</a></strong><br />
+</dt>
+<dd>
+<pre>
+    prints the ISO 3-letter code/ISO 2-letter code mappings to the
+    specified file as lines of the form: 
+    &quot;iso-3-letter-code&lt;tab&gt;iso-2-letter-code\n&quot;</pre>
+</dd>
+<dt><strong><a name="item_dump_iso2codes_to_fipscodes">dump_iso2codes_to_fipscodes (FILEREF)</a></strong><br />
+</dt>
+<dd>
+<pre>
+    prints the ISO 2-letter code/FIPS code mappings to the specified file
+    as lines of the form: 
+    &quot;iso-2-letter-code&lt;tab&gt;fips-code\n&quot;</pre>
+</dd>
+<dt><strong><a name="item_dump_fipscodes_to_iso2_codes">dump_fipscodes_to_iso2_codes (FILEREF)</a></strong><br />
+</dt>
+<dd>
+<pre>
+    prints the FIPS code/ISO 2-letter code mappings to the specified file
+    as lines of the form: 
+    &quot;fips-code&lt;tab&gt;iso-2-letter-code\n&quot;</pre>
+</dd>
+<dt><strong><a name="item_dump_continents_to_names">dump_continents_to_names (FILEREF)</a></strong><br />
+</dt>
+<dd>
+<pre>
+    prints the continent name/continent code mappings to the specified
+    file as lines of the form: 
+    &quot;continent-code&lt;tab&gt;continent-name\n&quot;</pre>
+</dd>
+<dt><strong><a name="item_dump_names_to_continents">dump_names_to_continents (FILEREF)</a></strong><br />
+</dt>
+<dd>
+<pre>
+    prints the continent code/country name mappings to the specified
+    file as lines of the form: 
+    &quot;continent-name&lt;tab&gt;continent-code\n&quot;</pre>
+</dd>
+</dl>
+</dl>
+<p>
+</p>
+<hr />
+<h1><a name="errors">ERRORS</a></h1>
+<p>
+</p>
+<hr />
+<h1><a name="examples">EXAMPLES</a></h1>
+<pre>
+    use CAIDA::Countries;
+    my $country = new CAIDA::Countries();</pre>
+<pre>
+    $country-&gt;get_iso2code_by_name('Canada');
+    $country-&gt;get_name_by_iso2code('ca');</pre>
+<pre>
+    $country-&gt;get_iso3code_by_iso2code('ca');
+    $country-&gt;get_iso2code_by_iso3code('can');</pre>
+<pre>
+    $country-&gt;get_fipscode_by_iso2code('cc');
+    $country-&gt;get_iso2code_by_fipscode('ck');</pre>
+<pre>
+    $country-&gt;get_location_by_iso2code('ca');
+    $country-&gt;get_iso2codes_by_contcode('na');
+    $country-&gt;get_continent_by_iso2code('ca');
+    $country-&gt;get_latlon_by_iso2code('ca');</pre>
+<pre>
+    $country-&gt;get_name_by_iso3code('can');
+    $country-&gt;get_name_by_fipscode('ck');
+    $country-&gt;get_names_by_contcode('na');</pre>
+<pre>
+    $country-&gt;get_fipscode_by_name('Cocos Islands');
+    $country-&gt;get_fipscode_by_iso3code('cck');
+    $country-&gt;get_fipscodes_by_contcode('na');</pre>
+<pre>
+    $country-&gt;get_continent_by_name('Canada');
+    $country-&gt;get_continent_by_iso3code('can');
+    $country-&gt;get_continent_by_fipscode('ck');</pre>
+<pre>
+    $country-&gt;get_latlon_by_name('Canada');
+    $country-&gt;get_latlon_by_iso3code('can');
+    $country-&gt;get_latlon_by_fipscode('ck');</pre>
+<pre>
+    $country-&gt;get_location_by_name('Canada');
+    $country-&gt;get_location_by_iso3code('can');
+    $country-&gt;get_location_by_fipscode('ck');</pre>
+<pre>
+    $country-&gt;get_contname_by_contcode('na');
+    $country-&gt;get_contcode_by_contname('North America');
+    
+    my $loc = 'ca';
+    $country-&gt;get_split_loc($loc, 0);
+    $country-&gt;get_split_loc($loc, 1);
+    
+    $country-&gt;dump_countries();</pre>
+<p>
+</p>
+<hr />
+<h1><a name="environment">ENVIRONMENT</a></h1>
+<p>
+</p>
+<hr />
+<h1><a name="see_also">SEE ALSO</a></h1>
+<p>
+</p>
+<hr />
+<h1><a name="notes">NOTES</a></h1>
+<p>
+</p>
+<hr />
+<h1><a name="warnings">WARNINGS</a></h1>
+<p>
+</p>
+<hr />
+<h1><a name="diagnostics">DIAGNOSTICS</a></h1>
+<p>
+</p>
+<hr />
+<h1><a name="bugs">BUGS</a></h1>
+<p>
+</p>
+<hr />
+<h1><a name="restrictions">RESTRICTIONS</a></h1>
+<p>
+</p>
+<hr />
+<h1><a name="author">AUTHOR</a></h1>
+<p>CoralReef Development team, CAIDA &lt;<a href="mailto:coral-info@caida.org">coral-info@caida.org</a>&gt;</p>
+
+</body>
+
+</html>

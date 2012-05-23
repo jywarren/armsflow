@@ -1,0 +1,5 @@
+<period value="<%= @year %>">
+	<% for transfer in @transfers -%>
+	<transfer agent_name="<%= transfer.agent.name %>" recipient_name="<%= transfer.recipient.name %>" lon="<%= transfer.agent.lon %>" lat="<%= transfer.agent.lat %>" value="<%= transfer.value %>" />		
+	<% end -%>
+</period>

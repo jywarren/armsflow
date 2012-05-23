@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dataset title=" TIV of arms exports from all, 1950-2006  Source: SIPRI Arms Transfers Database " unit="year">
+	<style></style>
+	<timeseries>
+	<period value="1950" sum="18.0" />
+	<period value="1951" sum="60.0" />
+	<period value="1952" sum="20.0" />
+	<period value="1953" sum="131.0" />
+	<period value="1954" sum="29.0" />
+	<period value="1955" sum="3.0" />
+	<period value="1956" sum="23.0" />
+	<period value="1957" sum="25.0" />
+	<period value="1958" sum="25.0" />
+	<period value="1959" sum="235.0" />
+	<period value="1960" sum="121.0" />
+	<period value="1961" sum="42.0" />
+	<period value="1962" sum="80.0" />
+	<period value="1963" sum="10.0" />
+	<period value="1964" sum="240.0" />
+	<period value="1965" sum="327.0" />
+	<period value="1966" sum="8.0" />
+	<period value="1967" sum="1.0" />
+	<period value="1968" sum="3.0" />
+	<period value="1969" sum="19.0" />
+	<period value="1970" sum="1.0" />
+	<period value="1971" sum="6.0" />
+	<period value="1972" sum="61.0" />
+	<period value="1973" sum="173.0" />
+	<period value="1974" sum="3.0" />
+	
+	</timeseries>
+</dataset>

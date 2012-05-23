@@ -1,0 +1,3 @@
+<period><% for transfer in @transfers -%><t a="<% if transfer.agent.name == "Serbia & Mont." %>Serbia/Mont.<% else %><%= transfer.agent.name %><% end %>" r="<% if transfer.recipient.name == "Serbia & Mont." %>Serbia/Mont.<% else %><%= transfer.recipient.name %><% end %>" x="<%= transfer.agent.lon.to_s.to(4) %>" y="<%= transfer.agent.lat.to_s.to(4) %>" x2="<%= transfer.recipient.lon.to_s.to(4) %>" y2="<%= transfer.recipient.lat.to_s.to(4) %>" v="<%= transfer.value.to_s.to(4) %>" />
+<% end -%>
+</period>

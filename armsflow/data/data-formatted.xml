@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dataset title="Arms Exports, logarithmic, 1950-2006" unit="year">
+	<style></style>
+	<timeseries>
+		<period value="1950">
+			<location name="Albania" lon="20.181061" lat="41.156799" value="32" color="" />
+			<location name="Algeria" lon="1.652840" lat="28.026880" value="17" color="" />
+			<location name="Angola" lon="17.907209" lat="-11.941840" value="23" color="" />
+			<location name="Argentina" lon="-63.584808" lat="-37.090698" value="100" color="" />
+			<location name="Australia" lon="133.393112" lat="-24.916201" value="1663" color="" />
+			<location name="Austria" lon="13.345770" lat="47.696510" value="1156" color="" />
+			<location name="Bahrain" lon="50.548500" lat="26.024750" value="2" color="" />
+			<location name="Bangladesh" lon="90.350899" lat="23.687450" value="2" color="" />
+			<location name="Belarus" lon="27.973749" lat="53.711048" value="1865" color="" />
+			<location name="Belgium" lon="4.476770" lat="50.500992" value="1355" color="" />
+			<location name="Bosnia-Herzegovina" lon="17.689079" lat="43.920250" value="4" color="" />
+			<location name="Brazil" lon="-54.387829" lat="-14.242920" value="3101" color="" />
+			<location name="Bulgaria" lon="25.491590" lat="42.729759" value="577" color="" />
+			<location name="Cambodia" lon="104.983856" lat="12.547730" value="1" color="" />
+			<location name="Canada" lon="-96.582092" lat="62.358730" value="9188" color="" />
+			<location name="Chad" lon="18.738060" lat="15.445710" value="20" color="" />
+			<location name="Chile" lon="-71.341087" lat="-35.705219" value="57" color="" />
+			<location name="China" lon="104.165649" lat="36.894451" value="39265" color="" />
+			<location name="Croatia" lon="15.408430" lat="44.736759" value="2" color="" />
+			<location name="Cuba" lon="-77.806793" lat="21.511021" value="89" color="" />
+			<location name="Cyprus" lon="33.435501" lat="35.132519" value="43" color="" />
+			<location name="Czechoslovakia" lon="15.475270" lat="49.803791" value="30507" color="" />
+			<location name="Czech Republic" lon="15.475270" lat="49.803791" value="1113" color="" />
+			<location name="Denmark" lon="9.516680" lat="56.275700" value="1729" color="" />
+			<location name="Egypt" lon="30.246469" lat="26.696360" value="808" color="" />
+			<location name="El Salvador" lon="-88.918793" lat="13.796870" value="1" color="" />
+			<location name="Eritrea" lon="39.950859" lat="15.181320" value="0" color="" />
+			<location name="Estonia" lon="25.815950" lat="58.596161" value="8" color="" />
+			<location name="Ethiopia" lon="40.493050" lat="9.147300" value="73" color="" />
+			<location name="Finland" lon="26.064140" lat="64.950371" value="847" color="" />
+			<location name="France" lon="1.718320" lat="46.712448" value="97754" color="" />
+			<location name="Gabon" lon="11.598910" lat="-0.828090" value="1" color="" />
+			<location name="Georgia" lon="-83.222931" lat="32.678131" value="188" color="" />
+			<location name="Germany" lon="10.454240" lat="51.163479" note="(FRG)" value="63838" color="" />
+			<location name="Ghana" lon="-1.031820" lat="7.955010" value="6" color="" />
+			<location name="Greece" lon="21.845560" lat="39.072449" value="179" color="" />
+			<location name="Guatemala" lon="-90.232307" lat="15.776250" value="1" color="" />
+			<location name="Hungary" lon="19.509600" lat="47.164509" value="339" color="" />
+			<location name="Iceland" lon="-19.021160" lat="64.963943" value="5" color="" />
+			<location name="India" lon="82.794762" lat="21.786600" value="215" color="" />
+			<location name="Indonesia" lon="113.917397" lat="0.109740" value="261" color="" />
+			<location name="Iran" lon="53.682362" lat="32.420650" value="406" color="" />
+			<location name="Iraq" lon="43.689850" lat="33.240520" value="215" color="" />
+			<location name="Ireland" lon="-8.240550" lat="53.419609" value="17" color="" />
+			<location name="Israel" lon="35.361240" lat="31.389299" value="7096" color="" />
+			<location name="Italy" lon="12.573410" lat="42.502998" value="29640" color="" />
+			<location name="Japan" lon="139.838287" lat="37.487598" value="2025" color="" />
+			<location name="Jordan" lon="37.139351" lat="31.278749" value="422" color="" />
+			<location name="Kazakhstan" lon="66.902290" lat="47.999249" value="249" color="" />
+			<location name="Kenya" lon="37.903950" lat="-0.024350" value="8" color="" />
+			<location name="Kuwait" lon="47.494450" lat="29.310150" value="130" color="" />
+			<location name="Kyrgyzstan" lon="74.779900" lat="41.205540" value="153" color="" />
+			<location name="Latvia" lon="24.607500" lat="56.875462" value="8" color="" />
+			<location name="Lebanon" lon="35.876549" lat="33.872452" value="47" color="" />
+			<location name="Libya" lon="17.268820" lat="26.338520" value="1175" color="" />
+			<location name="Lithuania" lon="23.959900" lat="55.174000" value="3" color="" />
+			<location name="Malawi" lon="34.295380" lat="-13.246270" value="1" color="" />
+			<location name="Malaysia" lon="114.401657" lat="3.945150" value="15" color="" />
+			<location name="Malta" lon="14.450810" lat="35.904072" value="10" color="" />
+			<location name="Mexico" lon="-101.956253" lat="23.625740" value="2" color="" />
+			<location name="Moldova" lon="28.391310" lat="46.979328" value="286" color="" />
+			<location name="Morocco" lon="-7.067000" lat="31.815411" value="11" color="" />
+			<location name="Mozambique" lon="35.530151" lat="-18.670280" value="1" color="" />
+			<location name="Netherlands" lon="5.330330" lat="52.108089" value="17525" color="" />
+			<location name="New Zealand" lon="170.366638" lat="-43.587711" value="85" color="" />
+			<location name="Nicaragua" lon="-85.424049" lat="12.866720" value="116" color="" />
+			<location name="Niger" lon="8.080940" lat="17.610991" value="1" color="" />
+			<location name="Nigeria" lon="8.674250" lat="9.084570" value="9" color="" />
+			<location name="North Korea" lon="127.495216" lat="40.339600" value="2030" color="" />
+			<location name="North Yemen" lon="47.836750" lat="15.796700" value="3" color="" />
+			<location name="Norway" lon="12.665380" lat="64.556534" value="2274" color="" />
+			<location name="Oman" lon="55.859261" lat="20.814350" value="13" color="" />
+			<location name="Pakistan" lon="69.359703" lat="30.441851" value="223" color="" />
+			<location name="Panama" lon="-80.112778" lat="8.417700" value="2" color="" />
+			<location name="Peru" lon="-75.002357" lat="-9.181340" value="59" color="" />
+			<location name="Philippines" lon="120.739067" lat="15.593050" value="7" color="" />
+			<location name="Poland" lon="19.136471" lat="51.922508" value="6955" color="" />
+			<location name="Portugal" lon="-7.845160" lat="39.565990" value="233" color="" />
+			<location name="Qatar" lon="51.196758" lat="25.318800" value="135" color="" />
+			<location name="Romania" lon="24.980400" lat="45.946949" value="1065" color="" />
+			<location name="Russia" lon="108.831779" lat="59.461479" value="64258" color="" />
+			<location name="Saudi Arabia" lon="45.120209" lat="23.917549" value="104" color="" />
+			<location name="Senegal" lon="-14.445550" lat="14.499450" value="1" color="" />
+			<location name="Serbia" lon="20.910789" lat="44.049809" value="1358" color="" />
+			<location name="Singapore" lon="103.853256" lat="1.293780" value="894" color="" />
+			<location name="Slovakia" lon="19.701740" lat="48.665501" value="805" color="" />
+			<location name="South Africa" lon="24.676991" lat="-28.483219" value="1015" color="" />
+			<location name="South Korea" lon="127.850166" lat="36.448151" value="1703" color="" />
+			<location name="South Vietnam" lon="-66.115334" lat="18.406618" value="4" color="" />
+			<location name="South Yemen" lon="47.836750" lat="15.796700" value="59" color="" />
+			<location name="Spain" lon="-2.988680" lat="39.895020" value="5532" color="" />
+			<location name="Sudan" lon="30.209490" lat="13.316640" value="6" color="" />
+			<location name="Sweden" lon="17.551420" lat="62.198448" value="10883" color="" />
+			<location name="Switzerland" lon="8.224140" lat="46.813091" value="4722" color="" />
+			<location name="Syria" lon="39.056000" lat="34.814800" value="401" color="" />
+			<location name="Taiwan" lon="121.023811" lat="23.599751" value="202" color="" />
+			<location name="Thailand" lon="101.492500" lat="13.036590" value="10" color="" />
+			<location name="Turkey" lon="35.449200" lat="38.958500" value="236" color="" />
+			<location name="UAE" lon="55.115898" lat="24.287849" value="122" color="" />
+			<location name="UK" lon="-2.232180" lat="54.313919" value="105930" color="" />
+			<location name="Ukraine" lon="31.173441" lat="48.382881" value="5492" color="" />
+			<location name="Uruguay" lon="-55.758331" lat="-32.531509" value="7" color="" />
+			<location name="USA" lon="-98.58" lat="39.83" value="558306" color="" />
+			<location name="USSR" lon="55.794559" lat="44.957489" value="460836" color="" />
+			<location name="Uzbekistan" lon="64.564453" lat="41.394760" value="587" color="" />
+			<location name="Venezuela" lon="-66.589043" lat="6.472790" value="35" color="" />
+			<location name="Viet Nam" lon="107.868042" lat="15.974210" value="5" color="" />
+			<location name="Zambia" lon="27.852539" lat="-13.151920" value="2" color="" />
+			<location name="Zimbabwe" lon="29.146660" lat="-19.013281" value="7" color="" />
+		</period>
+		<period value="1951">
+			<location name="Albania" lon="20.181061" lat="41.156799" value="32" color="" />
+			<location name="Algeria" lon="1.652840" lat="28.026880" value="17" color="" />
+			<location name="Angola" lon="17.907209" lat="-11.941840" value="23" color="" />
+			<location name="Argentina" lon="-63.584808" lat="-37.090698" value="100" color="" />
+			<location name="Australia" lon="133.393112" lat="-24.916201" value="1663" color="" />
+			<location name="Austria" lon="13.345770" lat="47.696510" value="1156" color="" />
+			<location name="Bahrain" lon="50.548500" lat="26.024750" value="2" color="" />
+			<location name="Bangladesh" lon="90.350899" lat="23.687450" value="2" color="" />
+			<location name="Belarus" lon="27.973749" lat="53.711048" value="1865" color="" />
+			<location name="Belgium" lon="4.476770" lat="50.500992" value="1355" color="" />
+			<location name="Bosnia-Herzegovina" lon="17.689079" lat="43.920250" value="4" color="" />
+			<location name="Brazil" lon="-54.387829" lat="-14.242920" value="3101" color="" />
+			<location name="Bulgaria" lon="25.491590" lat="42.729759" value="577" color="" />
+			<location name="Cambodia" lon="104.983856" lat="12.547730" value="1" color="" />
+			<location name="Canada" lon="-96.582092" lat="62.358730" value="9188" color="" />
+			<location name="Chad" lon="18.738060" lat="15.445710" value="20" color="" />
+			<location name="Chile" lon="-71.341087" lat="-35.705219" value="57" color="" />
+			<location name="China" lon="104.165649" lat="36.894451" value="39265" color="" />
+			<location name="Croatia" lon="15.408430" lat="44.736759" value="2" color="" />
+			<location name="Cuba" lon="-77.806793" lat="21.511021" value="89" color="" />
+			<location name="Cyprus" lon="33.435501" lat="35.132519" value="43" color="" />
+			<location name="Czechoslovakia" lon="15.475270" lat="49.803791" value="30507" color="" />
+			<location name="Czech Republic" lon="15.475270" lat="49.803791" value="1113" color="" />
+			<location name="Denmark" lon="9.516680" lat="56.275700" value="1729" color="" />
+			<location name="Egypt" lon="30.246469" lat="26.696360" value="808" color="" />
+			<location name="El Salvador" lon="-88.918793" lat="13.796870" value="1" color="" />
+			<location name="Eritrea" lon="39.950859" lat="15.181320" value="0" color="" />
+			<location name="Estonia" lon="25.815950" lat="58.596161" value="8" color="" />
+			<location name="Ethiopia" lon="40.493050" lat="9.147300" value="73" color="" />
+			<location name="Finland" lon="26.064140" lat="64.950371" value="847" color="" />
+			<location name="France" lon="1.718320" lat="46.712448" value="97754" color="" />
+			<location name="Gabon" lon="11.598910" lat="-0.828090" value="1" color="" />
+			<location name="Georgia" lon="-83.222931" lat="32.678131" value="188" color="" />
+			<location name="Germany" lon="10.454240" lat="51.163479" note="(FRG)" value="63838" color="" />
+			<location name="Ghana" lon="-1.031820" lat="7.955010" value="6" color="" />
+			<location name="Greece" lon="21.845560" lat="39.072449" value="179" color="" />
+			<location name="Guatemala" lon="-90.232307" lat="15.776250" value="1" color="" />
+			<location name="Hungary" lon="19.509600" lat="47.164509" value="339" color="" />
+			<location name="Iceland" lon="-19.021160" lat="64.963943" value="5" color="" />
+			<location name="India" lon="82.794762" lat="21.786600" value="215" color="" />
+			<location name="Indonesia" lon="113.917397" lat="0.109740" value="261" color="" />
+			<location name="Iran" lon="53.682362" lat="32.420650" value="406" color="" />
+			<location name="Iraq" lon="43.689850" lat="33.240520" value="215" color="" />
+			<location name="Ireland" lon="-8.240550" lat="53.419609" value="17" color="" />
+			<location name="Israel" lon="35.361240" lat="31.389299" value="7096" color="" />
+			<location name="Italy" lon="12.573410" lat="42.502998" value="29640" color="" />
+			<location name="Japan" lon="139.838287" lat="37.487598" value="2025" color="" />
+			<location name="Jordan" lon="37.139351" lat="31.278749" value="422" color="" />
+			<location name="Kazakhstan" lon="66.902290" lat="47.999249" value="249" color="" />
+			<location name="Kenya" lon="37.903950" lat="-0.024350" value="8" color="" />
+			<location name="Kuwait" lon="47.494450" lat="29.310150" value="130" color="" />
+			<location name="Kyrgyzstan" lon="74.779900" lat="41.205540" value="153" color="" />
+			<location name="Latvia" lon="24.607500" lat="56.875462" value="8" color="" />
+			<location name="Lebanon" lon="35.876549" lat="33.872452" value="47" color="" />
+			<location name="Libya" lon="17.268820" lat="26.338520" value="1175" color="" />
+			<location name="Lithuania" lon="23.959900" lat="55.174000" value="3" color="" />
+			<location name="Malawi" lon="34.295380" lat="-13.246270" value="1" color="" />
+			<location name="Malaysia" lon="114.401657" lat="3.945150" value="15" color="" />
+			<location name="Malta" lon="14.450810" lat="35.904072" value="10" color="" />
+			<location name="Mexico" lon="-101.956253" lat="23.625740" value="2" color="" />
+			<location name="Moldova" lon="28.391310" lat="46.979328" value="286" color="" />
+			<location name="Morocco" lon="-7.067000" lat="31.815411" value="11" color="" />
+			<location name="Mozambique" lon="35.530151" lat="-18.670280" value="1" color="" />
+			<location name="Netherlands" lon="5.330330" lat="52.108089" value="17525" color="" />
+			<location name="New Zealand" lon="170.366638" lat="-43.587711" value="85" color="" />
+			<location name="Nicaragua" lon="-85.424049" lat="12.866720" value="116" color="" />
+			<location name="Niger" lon="8.080940" lat="17.610991" value="1" color="" />
+			<location name="Nigeria" lon="8.674250" lat="9.084570" value="9" color="" />
+			<location name="North Korea" lon="127.495216" lat="40.339600" value="2030" color="" />
+			<location name="North Yemen" lon="47.836750" lat="15.796700" value="3" color="" />
+			<location name="Norway" lon="12.665380" lat="64.556534" value="2274" color="" />
+			<location name="Oman" lon="55.859261" lat="20.814350" value="13" color="" />
+			<location name="Pakistan" lon="69.359703" lat="30.441851" value="223" color="" />
+			<location name="Panama" lon="-80.112778" lat="8.417700" value="2" color="" />
+			<location name="Peru" lon="-75.002357" lat="-9.181340" value="59" color="" />
+			<location name="Philippines" lon="120.739067" lat="15.593050" value="7" color="" />
+			<location name="Poland" lon="19.136471" lat="51.922508" value="6955" color="" />
+			<location name="Portugal" lon="-7.845160" lat="39.565990" value="233" color="" />
+			<location name="Qatar" lon="51.196758" lat="25.318800" value="135" color="" />
+			<location name="Romania" lon="24.980400" lat="45.946949" value="1065" color="" />
+			<location name="Russia" lon="108.831779" lat="59.461479" value="3" color="" />
+			<location name="Saudi Arabia" lon="45.120209" lat="23.917549" value="104" color="" />
+			<location name="Senegal" lon="-14.445550" lat="14.499450" value="1" color="" />
+			<location name="Serbia" lon="20.910789" lat="44.049809" value="1358" color="" />
+			<location name="Singapore" lon="103.853256" lat="1.293780" value="894" color="" />
+			<location name="Slovakia" lon="19.701740" lat="48.665501" value="805" color="" />
+			<location name="South Africa" lon="24.676991" lat="-28.483219" value="1015" color="" />
+			<location name="South Korea" lon="127.850166" lat="36.448151" value="1703" color="" />
+			<location name="South Vietnam" lon="-66.115334" lat="18.406618" value="4" color="" />
+			<location name="South Yemen" lon="47.836750" lat="15.796700" value="59" color="" />
+			<location name="Spain" lon="-2.988680" lat="39.895020" value="5532" color="" />
+			<location name="Sudan" lon="30.209490" lat="13.316640" value="6" color="" />
+			<location name="Sweden" lon="17.551420" lat="62.198448" value="10883" color="" />
+			<location name="Switzerland" lon="8.224140" lat="46.813091" value="4722" color="" />
+			<location name="Syria" lon="39.056000" lat="34.814800" value="401" color="" />
+			<location name="Taiwan" lon="121.023811" lat="23.599751" value="202" color="" />
+			<location name="Thailand" lon="101.492500" lat="13.036590" value="10" color="" />
+			<location name="Turkey" lon="35.449200" lat="38.958500" value="0" color="" />
+			<location name="UAE" lon="55.115898" lat="24.287849" value="122" color="" />
+			<location name="UK" lon="-2.232180" lat="54.313919" value="105930" color="" />
+			<location name="Ukraine" lon="31.173441" lat="48.382881" value="5492" color="" />
+			<location name="Uruguay" lon="-55.758331" lat="-32.531509" value="7" color="" />
+			<location name="USA" lon="-98.58" lat="39.83" value="558306" color="" />
+			<location name="USSR" lon="55.794559" lat="44.957489" value="460836" color="" />
+			<location name="Uzbekistan" lon="64.564453" lat="41.394760" value="587" color="" />
+			<location name="Venezuela" lon="-66.589043" lat="6.472790" value="35" color="" />
+			<location name="Viet Nam" lon="107.868042" lat="15.974210" value="5" color="" />
+			<location name="Zambia" lon="27.852539" lat="-13.151920" value="2" color="" />
+			<location name="Zimbabwe" lon="29.146660" lat="-19.013281" value="7" color="" />
+		</period>
+	</timeseries>
+</dataset>

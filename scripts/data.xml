@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dataset title="US Arms Exports" unit="year">
+	<style></style>
+	<timeseries>
+		<period value="1950">
+			<location name="Afghanistan" lon="67.678940" lat="33.930450" value="1641" color="" />
+			<location name="Albania" lon="20.181061" lat="41.156799" value="1641" color="" />
+			<location name="Algeria" lon="1.652840" lat="28.026880" value="1641" color="" />
+			<location name="Angola" lon="17.907209" lat="-11.941840" value="1641" color="" />
+			<location name="Argentina" lon="-63.584808" lat="-37.090698" value="1641" color="" />
+			<location name="Armenia" lon="45.039890" lat="40.066170" value="1641" color="" />
+			<location name="Australia" lon="133.393112" lat="-24.916201" value="1641" color="" />
+			<location name="Austria" lon="13.345770" lat="47.696510" value="1641" color="" />
+			<location name="Azerbaijan" lon="47.687069" lat="40.151340" value="1641" color="" />
+			<location name="Bahamas" lon="-78.080017" lat="24.741421" value="1641" color="" />
+			<location name="Bahrain" lon="50.548500" lat="26.024750" value="1641" color="" />
+			<location name="Bangladesh" lon="90.350899" lat="23.687450" value="1641" color="" />
+			<location name="Barbados" lon="-59.534649" lat="13.183550" value="1641" color="" />
+			<location name="Belarus" lon="27.973749" lat="53.711048" value="1641" color="" />
+			<location name="Belgium" lon="4.476770" lat="50.500992" value="1641" color="" />
+			<location name="Belize" lon="-88.652840" lat="17.192921" value="1641" color="" />
+			<location name="Benin" lon="2.313130" lat="9.322040" value="1641" color="" />
+			<location name="Bhutan" lon="90.442268" lat="27.515499" value="1641" color="" />
+			<location name="Bolivia" lon="-63.549419" lat="-16.288349" value="1641" color="" />
+			<location name="Bosnia-Herzegovina" lon="17.689079" lat="43.920250" value="1641" color="" />
+			<location name="Botswana" lon="24.680161" lat="-22.344030" value="1641" color="" />
+			<location name="Brazil" lon="-54.387829" lat="-14.242920" value="1641" color="" />
+			<location name="Brunei" lon="114.598969" lat="4.525130" value="1641" color="" />
+			<location name="Bulgaria" lon="25.491590" lat="42.729759" value="1641" color="" />
+			<location name="Burkina Faso" lon="-1.556760" lat="12.241840" value="1641" color="" />
+			<location name="Burundi" lon="29.920389" lat="-3.387910" value="1641" color="" />
+			<location name="Cambodia" lon="104.983856" lat="12.547730" value="1641" color="" />
+			<location name="Cameroon" lon="12.343440" lat="7.365290" value="1641" color="" />
+			<location name="Canada" lon="-96.582092" lat="62.358730" value="1641" color="" />
+		</period>
+	</timeseries>
+</dataset>

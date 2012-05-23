@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dataset title="US Arms Exports" unit="year">
+	<style></style>
+	<timeseries>
+		<period value="1950">
+			<location name="Afghanistan" value="1641" color="" />
+			<location name="Albania" value="1641" color="" />
+			<location name="Algeria" value="1641" color="" />
+			<location name="Angola" value="1641" color="" />
+			<location name="Argentina" value="1641" color="" />
+			<location name="Armenia" value="1641" color="" />
+			<location name="Australia" value="1641" color="" />
+			<location name="Austria" value="1641" color="" />
+			<location name="Azerbaijan" value="1641" color="" />
+			<location name="Bahamas" value="1641" color="" />
+			<location name="Bahrain" value="1641" color="" />
+			<location name="Bangladesh" value="1641" color="" />
+			<location name="Barbados" value="1641" color="" />
+			<location name="Belarus" value="1641" color="" />
+			<location name="Belgium" value="1641" color="" />
+			<location name="Belize" value="1641" color="" />
+			<location name="Benin" value="1641" color="" />
+			<location name="Bhutan" value="1641" color="" />
+			<location name="Bolivia" value="1641" color="" />
+			<location name="Bosnia-Herzegovina" value="1641" color="" />
+			<location name="Botswana" value="1641" color="" />
+			<location name="Brazil" value="1641" color="" />
+			<location name="Brunei" value="1641" color="" />
+			<location name="Bulgaria" value="1641" color="" />
+			<location name="Burkina Faso" value="1641" color="" />
+			<location name="Burundi" value="1641" color="" />
+			<location name="Cambodia" value="1641" color="" />
+			<location name="Cameroon" value="1641" color="" />
+			<location name="Canada" value="1641" color="" />
+		</period>
+	</timeseries>
+</dataset>

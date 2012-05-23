@@ -1,0 +1,2 @@
+<% for period in @periods -%><% unless period.blank? %><period value="<%= @range.shift %>" sum="<%= period/15 %>" />
+	<% end -%><% end -%>

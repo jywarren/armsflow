@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dataset title=" TIV of arms exports from all, 1950-2006  Source: SIPRI Arms Transfers Database " unit="year">
+	<style></style>
+	<timeseries>
+	<period value="1950" sum="127.0" />
+	<period value="1951" sum="106.0" />
+	<period value="1952" sum="23.0" />
+	<period value="1953" sum="7.0" />
+	<period value="1954" sum="130.0" />
+	<period value="1955" sum="232.0" />
+	<period value="1956" sum="251.0" />
+	<period value="1957" sum="208.0" />
+	<period value="1958" sum="4.0" />
+	<period value="1959" sum="91.0" />
+	<period value="1960" sum="303.0" />
+	<period value="1961" sum="407.0" />
+	<period value="1962" sum="447.0" />
+	<period value="1963" sum="768.0" />
+	<period value="1964" sum="645.0" />
+	<period value="1965" sum="444.0" />
+	<period value="1966" sum="201.0" />
+	<period value="1967" sum="139.0" />
+	<period value="1968" sum="332.0" />
+	<period value="1969" sum="248.0" />
+	<period value="1970" sum="466.0" />
+	<period value="1971" sum="422.0" />
+	<period value="1972" sum="405.0" />
+	<period value="1973" sum="488.0" />
+	<period value="1974" sum="799.0" />
+	<period value="1975" sum="758.0" />
+	<period value="1976" sum="722.0" />
+	<period value="1977" sum="786.0" />
+	<period value="1978" sum="1460.0" />
+	<period value="1979" sum="1494.0" />
+	<period value="1980" sum="1691.0" />
+	<period value="1981" sum="1649.0" />
+	<period value="1982" sum="913.0" />
+	<period value="1983" sum="1254.0" />
+	<period value="1984" sum="932.0" />
+	<period value="1985" sum="419.0" />
+	<period value="1986" sum="737.0" />
+	<period value="1987" sum="498.0" />
+	<period value="1988" sum="365.0" />
+	<period value="1989" sum="358.0" />
+	<period value="1990" sum="518.0" />
+	<period value="1991" sum="453.0" />
+	<period value="1992" sum="458.0" />
+	<period value="1993" sum="310.0" />
+	<period value="1994" sum="367.0" />
+	<period value="1995" sum="437.0" />
+	<period value="1996" sum="443.0" />
+	<period value="1997" sum="421.0" />
+	<period value="1998" sum="510.0" />
+	<period value="1999" sum="201.0" />
+	<period value="2000" sum="214.0" />
+	<period value="2001" sum="405.0" />
+	<period value="2002" sum="322.0" />
+	<period value="2003" sum="210.0" />
+	<period value="2004" sum="797.0" />
+	<period value="2005" sum="880.0" />
+	
+	</timeseries>
+</dataset>

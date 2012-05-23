@@ -1,0 +1,5 @@
+<% for period in @periods -%><% unless period.blank? %><period value="<%= period.first.datetime %>">
+		<% for transfer in period -%><transfer agent_name="<%= transfer.agent.name %>" recipient_name="<%= transfer.recipient.name %>" lon="<%= transfer.agent.lon %>" lat="<%= transfer.agent.lat %>" value="<%= transfer.value %>" />
+		<% end -%>
+</period>
+<% end -%><% end -%>

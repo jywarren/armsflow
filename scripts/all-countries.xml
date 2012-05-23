@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dataset title="US Arms Exports" unit="year">
+	<style></style>
+	<timeseries>
+		<period value="1950">
+			<location xame="Afghanistan/Mujahideen" value="1" color="" />
+			<location name="Albania" value="32" color="" />
+			<location name="Algeria" value="17" color="" />
+			<location name="Angola" value="23" color="" />
+			<location name="Argentina" value="100" color="" />
+			<location name="Australia" value="1663" color="" />
+			<location name="Austria" value="1156" color="" />
+			<location name="Bahrain" value="2" color="" />
+			<location name="Bangladesh" value="2" color="" />
+			<location name="Belarus" value="1865" color="" />
+			<location name="Belgium" value="1355" color="" />
+			<location name="Bosnia-Herzegovina" value="4" color="" />
+			<location name="Brazil" value="3101" color="" />
+			<location name="Bulgaria" value="577" color="" />
+			<location name="Cambodia" value="1" color="" />
+			<location name="Canada" value="9188" color="" />
+			<location name="Chad" value="20" color="" />
+			<location name="Chile" value="57" color="" />
+			<location name="China" value="39265" color="" />
+			<location xame="Cote d'Ivoire" value="1" color="" />
+			<location name="Croatia" value="2" color="" />
+			<location name="Cuba" value="89" color="" />
+			<location name="Cyprus" value="43" color="" />
+			<location name="Czechoslovakia" value="30507" color="" />
+			<location name="Czech Republic" value="1113" color="" />
+			<location name="Denmark" value="1729" color="" />
+			<location xame="DRC (Zaire)" value="1" color="" />
+			<location xame="East Germany (GDR)" value="880" color="" />
+			<location name="Egypt" value="808" color="" />
+			<location name="El Salvador/FMLN" value="1" color="" />
+			<location name="Eritrea" value="0" color="" />
+			<location name="Estonia" value="8" color="" />
+			<location name="Ethiopia" value="73" color="" />
+			<location name="Finland" value="847" color="" />
+			<location name="France" value="97754" color="" />
+			<location name="Gabon" value="1" color="" />
+			<location name="Georgia" value="188" color="" />
+			<location name="Germany" note="(FRG)" value="63838" color="" />
+			<location name="Ghana" value="6" color="" />
+			<location name="Greece" value="179" color="" />
+			<location name="Guatemala" value="1" color="" />
+			<location name="Hungary" value="339" color="" />
+			<location name="Iceland" value="5" color="" />
+			<location name="India" value="215" color="" />
+			<location name="Indonesia" value="261" color="" />
+			<location name="Iran" value="406" color="" />
+			<location name="Iraq" value="215" color="" />
+			<location name="Ireland" value="17" color="" />
+			<location name="Israel" value="7096" color="" />
+			<location name="Italy" value="29640" color="" />
+			<location name="Japan" value="2025" color="" />
+			<location name="Jordan" value="422" color="" />
+			<location name="Kazakhstan" value="249" color="" />
+			<location name="Kenya" value="8" color="" />
+			<location name="Kuwait" value="130" color="" />
+			<location name="Kyrgyzstan" value="153" color="" />
+			<location name="Latvia" value="8" color="" />
+			<location name="Lebanon" value="47" color="" />
+			<location name="Libya" value="1175" color="" />
+			<location name="Lithuania" value="3" color="" />
+			<location name="Malawi" value="1" color="" />
+			<location name="Malaysia" value="15" color="" />
+			<location name="Malta" value="10" color="" />
+			<location name="Mexico" value="2" color="" />
+			<location name="Moldova" value="286" color="" />
+			<location name="Morocco" value="11" color="" />
+			<location name="Mozambique" value="1" color="" />
+			<location name="Netherlands" value="17525" color="" />
+			<location name="New Zealand" value="85" color="" />
+			<location name="Nicaragua" value="116" color="" />
+			<location name="Niger" value="1" color="" />
+			<location name="Nigeria" value="9" color="" />
+			<location name="North Korea" value="2030" color="" />
+			<location name="North Yemen" value="3" color="" />
+			<location name="Norway" value="2274" color="" />
+			<location name="Oman" value="13" color="" />
+			<location name="Pakistan" value="223" color="" />
+			<location name="Panama" value="2" color="" />
+			<location name="Peru" value="59" color="" />
+			<location name="Philippines" value="7" color="" />
+			<location name="Poland" value="6955" color="" />
+			<location name="Portugal" value="233" color="" />
+			<location name="Qatar" value="135" color="" />
+			<location name="Romania" value="1065" color="" />
+			<location name="Russia" value="64258" color="" />
+			<location name="Saudi Arabia" value="104" color="" />
+			<location name="Senegal" value="1" color="" />
+			<location name="Serbia & Mont." value="1358" color="" />
+			<location name="Singapore" value="894" color="" />
+			<location name="Slovakia" value="805" color="" />
+			<location name="South Africa" value="1015" color="" />
+			<location name="South Korea" value="1703" color="" />
+			<location name="South Vietnam" value="4" color="" />
+			<location name="South Yemen" value="59" color="" />
+			<location name="Spain" value="5532" color="" />
+			<location name="Sudan" value="6" color="" />
+			<location name="Sweden" value="10883" color="" />
+			<location name="Switzerland" value="4722" color="" />
+			<location name="Syria" value="401" color="" />
+			<location name="Taiwan" value="202" color="" />
+			<location name="Thailand" value="10" color="" />
+			<location name="Turkey" value="236" color="" />
+			<location name="UAE" value="122" color="" />
+			<location name="UK" value="105930" color="" />
+			<location name="Ukraine" value="5492" color="" />
+			<location xame="United Nations" value="0" color="" />
+			<location xame="Unknown country" value="813" color="" />
+			<location name="Uruguay" value="7" color="" />
+			<location name="USA" value="558306" color="" />
+			<location name="USSR" value="460836" color="" />
+			<location name="Uzbekistan" value="587" color="" />
+			<location name="Venezuela" value="35" color="" />
+			<location name="Viet Nam" value="5" color="" />
+			<location name="Zambia" value="2" color="" />
+			<location name="Zimbabwe" value="7" color="" />
+		</period>
+	</timeseries>
+</dataset>
